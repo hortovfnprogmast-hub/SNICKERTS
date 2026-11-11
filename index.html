@@ -23,7 +23,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
 
     <script>
-        tailwind.config = { darkMode: "class", corePlugins: { preflight: false }, theme: { extend: { colors: { primary: "#DC2626", "primary-dark": "#B91C1C", "surface": "#FFFFFF", "background": "#F8FAFC", "text-main": "#1E293B", "text-sub": "#64748B", }, fontFamily: { sans: ["Inter", "sans-serif"] } } } };
+        tailwind.config = { darkMode: "class", corePlugins: { preflight: false }, theme: { extend: { colors: { primary: "#4A0500", "primary-dark": "#2A0200", "surface": "#FFFFFF", "background": "#F8FAFC", "text-main": "#1E293B", "text-sub": "#64748B", }, fontFamily: { sans: ["Inter", "sans-serif"] } } } };
     </script>
 
     <script>
@@ -35,7 +35,7 @@
     <style>
         body { margin: 0; padding: 0; background-color: #f8fafc; }
         
-        #login-screen { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #DC2626 0%, #7F1D1D 100%); background-attachment: fixed; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; box-sizing: border-box; }
+        #login-screen { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #4A0500 0%, #2A0200 100%); background-attachment: fixed; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; box-sizing: border-box; }
         #login-card { width: 100%; max-width: 420px; background: white; border-radius: 24px; box-sizing: border-box; padding: 32px 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
         
         .modulo-vista { display: none; animation: fadeIn 0.3s ease-in-out; }
@@ -46,9 +46,9 @@
         /* === ESTILOS DEL MENÚ === */
         .sidebar-link.activa { 
             background-color: #FEF2F2 !important; 
-            color: #DC2626 !important; 
+            color: #4A0500 !important; 
             font-weight: 700 !important; 
-            border-left: 4px solid #DC2626 !important; 
+            border-left: 4px solid #4A0500 !important; 
             border-radius: 0 8px 8px 0 !important; 
         }
         
@@ -59,8 +59,8 @@
         .sidebar-link.activa svg polyline, 
         .sidebar-link.activa svg rect, 
         .sidebar-link.activa svg circle { 
-            stroke: #DC2626 !important;
-            color: #DC2626 !important;
+            stroke: #4A0500 !important;
+            color: #4A0500 !important;
         }
 
         .sidebar-section { padding: 10px 0; border-bottom: 1px solid #f1f5f9; margin-bottom: 5px; }
@@ -68,7 +68,7 @@
         .sidebar-section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; color: #94a3b8; letter-spacing: 0.5px; margin: 10px 20px; }
 
         .form-input, .form-select, textarea.form-input { width: 100% !important; padding: 14px 16px !important; background-color: #F3F4F6 !important; border: 1px solid transparent !important; border-radius: 12px !important; font-size: 14px !important; color: #1F2937 !important; box-sizing: border-box !important; font-family: inherit !important; outline: none !important; transition: all 0.2s ease !important; }
-        .form-input:focus, .form-select:focus, textarea.form-input:focus { background-color: #FFFFFF !important; border: 1px solid #DC2626 !important; box-shadow: 0 0 0 3px rgba(220,38,38,0.1) !important; }
+        .form-input:focus, .form-select:focus, textarea.form-input:focus { background-color: #FFFFFF !important; border: 1px solid #4A0500 !important; box-shadow: 0 0 0 3px rgba(74, 5, 0,0.1) !important; }
         
         .form-card, .data-table-container, .filters-bar, .fc-stat-card, .rpt-card { background: #FFFFFF; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); border: 1px solid #E5E7EB; margin-bottom: 24px; }
         .form-card { padding: 30px; width: 100%; }
@@ -79,7 +79,7 @@
         @media (min-width: 640px) { .photo-controls { display: flex; grid-template-columns: none; } }
         
         .btn-photo, .btn-photo-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 14px; transition: all 0.2s; width: 100%; box-sizing: border-box; }
-        .btn-photo { background: #DC2626; color: white; border: none; }
+        .btn-photo { background: #4A0500; color: white; border: none; }
         .btn-photo-secondary { background: white; color: #374151; border: 1px solid #d1d5db; }
         @media (min-width: 640px) { .btn-photo, .btn-photo-secondary { width: auto; } }
 
@@ -117,7 +117,7 @@
         .tab-btn:hover { background: #e5e7eb; }
         .tab-btn.active { background: white !important; color: #111827 !important; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border: 1px solid #e5e7eb !important; }
         .tab-badge { background: #d1d5db; color: white; padding: 2px 8px; border-radius: 12px; font-size: 12px; }
-        .tab-btn.active .tab-badge { background: #DC2626; }
+        .tab-btn.active .tab-badge { background: #4A0500; }
 
         /* BARRA DE FILTROS */
         .filters-bar { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #E5E7EB; display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-end; }
@@ -141,8 +141,8 @@
         .up-info strong { color: #111827; font-weight: 800; font-size: 15px; }
         .btn-limpiar { background: white; color: #6b7280; border: 1px solid #e5e7eb; height: 40px; padding: 0 16px; border-radius: 8px; font-weight: 600; font-size: 13px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;}
         .btn-limpiar:hover { background: #f3f4f6; color: #111827; }
-        .btn-adjuntar { background: #DC2626; color: white; border: none; height: 40px; padding: 0 20px; border-radius: 8px; font-weight: 600; font-size: 13px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: background 0.2s;}
-        .btn-adjuntar:hover { background: #b91c1c; }
+        .btn-adjuntar { background: #4A0500; color: white; border: none; height: 40px; padding: 0 20px; border-radius: 8px; font-weight: 600; font-size: 13px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: background 0.2s;}
+        .btn-adjuntar:hover { background: #2A0200; }
 
         /* MODAL ALERTA CUSTOM */
         #custom-alert { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.6); z-index: 10000; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box; }
@@ -179,7 +179,7 @@
     <div id="login-screen">
         <div id="login-card">
             <div class="flex flex-col items-center mb-4">
-                <img src="https://i.ibb.co/DHmVRcxh/Tim-Hortons.jpg" alt="Logo Tim Hortons" class="mb-5 object-contain" style="height: 7.2rem; border-radius: 10px;"> 
+                <img src="https://i.ibb.co/PGtDQSJm/logosnickerts.jpg" alt="Logo" class="mb-5 object-contain" style="height: 7.2rem; border-radius: 10px;"> 
                 <h1 class="text-2xl font-semibold text-text-main tracking-tight" style="margin:0;">Bienvenido</h1>
                 <p class="text-[15px] text-text-sub mt-1" style="margin-top:5px;">Mesa de Servicio Operativo</p>
             </div>
@@ -204,11 +204,11 @@
                     </div>
                 </div>
 
-                <div id="alertMessage" class="hidden py-2.5 px-3 bg-red-50 border border-red-200 text-red-600 text-[13px] font-medium rounded-lg text-center transition-all" style="display:none; padding:10px; background:#FEE2E2; color:#DC2626; border-radius:8px; text-align:center; border:1px solid #FECACA; margin-bottom: 15px;">
+                <div id="alertMessage" class="hidden py-2.5 px-3 bg-red-50 border border-red-200 text-red-600 text-[13px] font-medium rounded-lg text-center transition-all" style="display:none; padding:10px; background:#FEE2E2; color:#4A0500; border-radius:8px; text-align:center; border:1px solid #FECACA; margin-bottom: 15px;">
                     Verifica tu usuario o contraseña
                 </div>
                 
-                <button id="submitBtn" class="w-full flex justify-center items-center py-3.5 px-4 rounded-lg text-sm font-semibold text-white bg-primary hover:bg-primary-dark shadow-sm transition-all" style="width:100%; padding:14px; background:#DC2626; color:white; border:none; border-radius:8px; font-weight:bold; cursor:pointer; margin-top:20px;" type="submit">Iniciar Sesión</button>
+                <button id="submitBtn" class="w-full flex justify-center items-center py-3.5 px-4 rounded-lg text-sm font-semibold text-white bg-primary hover:bg-primary-dark shadow-sm transition-all" style="width:100%; padding:14px; background:#4A0500; color:white; border:none; border-radius:8px; font-weight:bold; cursor:pointer; margin-top:20px;" type="submit">Iniciar Sesión</button>
             </form>
         </div>
         <div class="mt-8 text-center" style="margin-top: 2rem;">
@@ -265,7 +265,7 @@
                 
                 <div id="global-welcome-section" style="text-align: center; padding-top: 10px; padding-bottom: 25px; border-bottom: 1px solid #e5e7eb; margin-bottom: 25px;">
                     <h1 style="margin: 0; font-size: 24px; color: #111827; font-weight: 700;">Bienvenido</h1>
-                    <h2 id="welcome-username-display" style="margin: 5px 0 0 0; font-size: 30px; color: #DC2626; font-weight: 800; text-transform: uppercase; line-height: 1.2;">PROVEEDOR</h2>
+                    <h2 id="welcome-username-display" style="margin: 5px 0 0 0; font-size: 30px; color: #4A0500; font-weight: 800; text-transform: uppercase; line-height: 1.2;">PROVEEDOR</h2>
                 </div>
 
                 <div id="vista-inicio" class="modulo-vista">
@@ -349,8 +349,8 @@
 
                         <!-- FORMULARIO PRINCIPAL -->
                         <form id="ordenMttoForm" style="display: block;">
-                            <div class="form-card" style="border-left: 4px solid #DC2626;">
-                                <h3 class="section-title" style="color: #DC2626; margin-bottom: 5px;"><i data-lucide="hash"></i> Folio de Orden</h3>
+                            <div class="form-card" style="border-left: 4px solid #4A0500;">
+                                <h3 class="section-title" style="color: #4A0500; margin-bottom: 5px;"><i data-lucide="hash"></i> Folio de Orden</h3>
                                 <div class="form-group">
                                     <input type="text" class="form-input" id="folio_mc" readonly style="font-size: 20px; font-weight: 800; color: #111827; background: transparent !important; border: none !important; padding: 0 !important; box-shadow: none !important;" value="Se asignará al guardar...">
                                     <input type="hidden" id="doc_id_actual">
@@ -498,7 +498,7 @@
                                 </div>
                             </div>
 
-                            <div style="height: 12px; background-color: #DC2626; width: 100%; border-radius: 6px; margin-top: 35px; margin-bottom: 25px;"></div>
+                            <div style="height: 12px; background-color: #4A0500; width: 100%; border-radius: 6px; margin-top: 35px; margin-bottom: 25px;"></div>
 
                             <div class="submit-section" style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px; align-items: stretch; max-width: 400px; margin-left: auto; margin-right: auto; padding-bottom: 40px;">
                                 
@@ -506,7 +506,7 @@
                                     <i data-lucide="save"></i> Guardar Orden
                                 </button>
 
-                                <button type="button" id="btn-enviar-orden" onclick="procesarOrden('En proceso')" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 15px 20px; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; background: #DC2626; color: white; border: none; box-shadow: 0 4px 14px rgba(220, 38, 38, 0.3); width: 100%; transition: background 0.3s;">
+                                <button type="button" id="btn-enviar-orden" onclick="procesarOrden('En proceso')" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 15px 20px; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; background: #4A0500; color: white; border: none; box-shadow: 0 4px 14px rgba(74, 5, 0, 0.3); width: 100%; transition: background 0.3s;">
                                     <i data-lucide="send"></i> Enviar Orden
                                 </button>
                                 
@@ -615,7 +615,7 @@
         <div class="camera-controls">
             <button onclick="closeCamera()" style="padding:10px 20px; border-radius:8px; border:1px solid #d1d5db; background:white; cursor:pointer; color:#374151; font-weight:bold;">Cerrar</button>
             <button onclick="switchCamera()" style="padding:10px 20px; border-radius:8px; border:1px solid #d1d5db; background:#f3f4f6; cursor:pointer; color:#374151; font-weight:bold; display:inline-flex; align-items:center; gap:5px;"><i data-lucide="refresh-cw"></i> Girar</button>
-            <button onclick="captureFoto()" style="padding:10px 20px; border-radius:8px; background:#DC2626; color:white; border:none; cursor:pointer; font-weight:bold;">Capturar</button>
+            <button onclick="captureFoto()" style="padding:10px 20px; border-radius:8px; background:#4A0500; color:white; border:none; cursor:pointer; font-weight:bold;">Capturar</button>
         </div>
     </div>
     
@@ -636,12 +636,12 @@
     <!-- CONFIRM CUSTOM -->
     <div id="custom-confirm" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); z-index:9999999; align-items:center; justify-content:center; padding:20px; box-sizing:border-box;">
         <div style="background:white; border-radius:16px; padding:24px; width:100%; max-width:320px; text-align:center; box-shadow:0 10px 25px rgba(0,0,0,0.2);">
-            <div style="margin-bottom:16px; color:#DC2626; display:flex; justify-content:center;"><i data-lucide="alert-circle" style="width:48px; height:48px;"></i></div>
+            <div style="margin-bottom:16px; color:#4A0500; display:flex; justify-content:center;"><i data-lucide="alert-circle" style="width:48px; height:48px;"></i></div>
             <h3 id="confirm-title" style="margin:0 0 8px 0; font-size:18px; color:#111827; font-family:'Inter', sans-serif;">Confirmar</h3>
             <p id="confirm-msg" style="margin:0 0 20px 0; font-size:14px; color:#4b5563; font-family:'Inter', sans-serif;">¿Estás seguro?</p>
             <div style="display:flex; gap:12px;">
                 <button onclick="closeConfirm()" style="flex:1; padding:12px; border-radius:8px; background:white; border:1px solid #d1d5db; color:#374151; font-weight:600; cursor:pointer;">Cancelar</button>
-                <button id="confirm-btn-action" style="flex:1; padding:12px; border-radius:8px; background:#DC2626; border:none; color:white; font-weight:600; cursor:pointer;">Aceptar</button>
+                <button id="confirm-btn-action" style="flex:1; padding:12px; border-radius:8px; background:#4A0500; border:none; color:white; font-weight:600; cursor:pointer;">Aceptar</button>
             </div>
         </div>
     </div>
@@ -651,12 +651,12 @@
         // 1. CONFIGURACIÓN E INICIALIZACIÓN DE FIREBASE
         // ==========================================
         const firebaseConfig = {
-            apiKey: "AIzaSyC6a4ikG4ap0BJTjCiW97sDaDr6zcXjhoA",
-            authDomain: "timhortons-mantenimiento.firebaseapp.com",
-            projectId: "timhortons-mantenimiento",
-            storageBucket: "timhortons-mantenimiento.firebasestorage.app",
-            messagingSenderId: "892024009722",
-            appId: "1:892024009722:web:fd43a68570f78cedcaea43"
+            apiKey: "AIzaSyBnesSbwArJiFxryvN6wySkY_9A28r4-3Y",
+            authDomain: "snickerts-29758.firebaseapp.com",
+            projectId: "snickerts-29758",
+            storageBucket: "snickerts-29758.firebasestorage.app",
+            messagingSenderId: "423944699691",
+            appId: "1:423944699691:web:06a2f8c49c42f4bfc68f6e"
         };
         
         if (!firebase.apps.length) {
@@ -667,7 +667,7 @@
 
         lucide.createIcons();
 
-        const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxRgXvrvLkyZunkVRlFAb3_ry8jsmvp8ol-3-dRkd68Be-iW84u5xuLG2jwvvkjOjc/exec';
+        const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzQyd97ZCdwtXgli1T_qdOz6VwYygBKKjZMx8kGp0NltBQFsDhSouKTqGRqLO8Gc1ao/exec';
         window.appData = null;
 
         // ==========================================
@@ -687,8 +687,8 @@
                 alertIcon.innerHTML = '<i data-lucide="check-circle" style="width:48px; height:48px; color: #16a34a;"></i>';
                 alertBtn.style.background = '#16a34a';
             } else {
-                alertIcon.innerHTML = '<i data-lucide="alert-triangle" style="width:48px; height:48px; color: #DC2626;"></i>';
-                alertBtn.style.background = '#DC2626';
+                alertIcon.innerHTML = '<i data-lucide="alert-triangle" style="width:48px; height:48px; color: #4A0500;"></i>';
+                alertBtn.style.background = '#4A0500';
             }
             alertBox.style.display = 'flex';
             lucide.createIcons();
@@ -778,7 +778,7 @@
                 thead.innerHTML = `
                     <tr>
                         <th style="padding: 15px; width: 40px;" title="Seleccionar todos">
-                            <input type="checkbox" id="chk-all-drafts" onchange="toggleAllDrafts(this.checked)" style="width:16px; height:16px; cursor:pointer; accent-color:#DC2626;">
+                            <input type="checkbox" id="chk-all-drafts" onchange="toggleAllDrafts(this.checked)" style="width:16px; height:16px; cursor:pointer; accent-color:#4A0500;">
                         </th>
                         <th style="text-transform: uppercase; font-size: 11px; color: #6b7280;">Folio</th>
                         <th style="text-transform: uppercase; font-size: 11px; color: #6b7280;">Sucursal</th>
@@ -844,12 +844,12 @@
                 if(o.estado_confirmacion === 'Borrador') {
                     btnAccion = `<button type="button" onclick="cargarBorrador('${o.id_doc}')" style="background:#14A981; color:white; border:none; padding:6px 12px; border-radius:6px; cursor:pointer; font-weight:bold; display:inline-flex; align-items:center; gap:5px;"><i data-lucide="edit-2" style="width:14px;"></i> Editar</button>`;
                 } else if(o.estado_confirmacion === 'En proceso') {
-                    btnAccion = `<button type="button" onclick="verPDFOrden('${o.id_doc}')" style="background:#DC2626; color:white; border:none; padding:6px 12px; border-radius:6px; cursor:pointer; font-weight:bold; display:inline-flex; align-items:center; gap:5px;"><i data-lucide="file-text" style="width:14px;"></i> Ver PDF</button>`;
+                    btnAccion = `<button type="button" onclick="verPDFOrden('${o.id_doc}')" style="background:#4A0500; color:white; border:none; padding:6px 12px; border-radius:6px; cursor:pointer; font-weight:bold; display:inline-flex; align-items:center; gap:5px;"><i data-lucide="file-text" style="width:14px;"></i> Ver PDF</button>`;
                 } else {
                     // Aprobados o Rechazados
                     btnAccion = `<div style="display:flex; gap:8px; justify-content:center;">
-                                    <button type="button" onclick="verPDFOrden('${o.id_doc}')" style="background:#DC2626; color:white; border:none; padding:6px 12px; border-radius:6px; cursor:pointer; font-weight:bold; display:inline-flex; align-items:center; gap:5px;"><i data-lucide="file-text" style="width:14px;"></i> Ver PDF</button>
-                                    <button type="button" onclick="abrirModalLecturaCP('${o.id_doc}')" style="background:#DC2626; color:white; border:none; padding:6px 12px; border-radius:6px; cursor:pointer; font-weight:bold; display:inline-flex; align-items:center; gap:5px;"><i data-lucide="eye" style="width:14px;"></i> Ver CP</button>
+                                    <button type="button" onclick="verPDFOrden('${o.id_doc}')" style="background:#4A0500; color:white; border:none; padding:6px 12px; border-radius:6px; cursor:pointer; font-weight:bold; display:inline-flex; align-items:center; gap:5px;"><i data-lucide="file-text" style="width:14px;"></i> Ver PDF</button>
+                                    <button type="button" onclick="abrirModalLecturaCP('${o.id_doc}')" style="background:#4A0500; color:white; border:none; padding:6px 12px; border-radius:6px; cursor:pointer; font-weight:bold; display:inline-flex; align-items:center; gap:5px;"><i data-lucide="eye" style="width:14px;"></i> Ver CP</button>
                                  </div>`;
                 }
 
@@ -857,12 +857,12 @@
                 if(tabMttoActual === 'Borrador') { colorPill = '#e0e7ff'; textPill = '#1d4ed8'; }
                 else if(tabMttoActual === 'En proceso') { colorPill = '#fef3c7'; textPill = '#b45309'; }
                 else if(tabMttoActual === 'Aprobados') { colorPill = '#dcfce7'; textPill = '#15803d'; }
-                else if(tabMttoActual === 'Rechazados') { colorPill = '#fee2e2'; textPill = '#b91c1c'; }
+                else if(tabMttoActual === 'Rechazados') { colorPill = '#fee2e2'; textPill = '#2A0200'; }
 
                 const tr = document.createElement('tr');
                 if (tabMttoActual === 'Borrador') {
                     tr.innerHTML = `
-                        <td><input type="checkbox" class="chk-draft" value="${o.id_doc}" onchange="actualizarBarraBorradores()" style="width:16px; height:16px; cursor:pointer; accent-color:#DC2626;"></td>
+                        <td><input type="checkbox" class="chk-draft" value="${o.id_doc}" onchange="actualizarBarraBorradores()" style="width:16px; height:16px; cursor:pointer; accent-color:#4A0500;"></td>
                         <td style="padding: 15px; font-weight: bold;">${o.id_ticket || 'Se asignará...'}</td>
                         <td style="font-size: 13px;">${o.sucursal || 'Sin asignar'}</td>
                         <td style="font-size: 13px;">${o.fecha_creacion || ''}</td>
